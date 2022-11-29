@@ -1,2 +1,2 @@
 const db = require('./connection');
-const { User, Product} = require('../models');
+const { User, Product,Category} = require('../models');
