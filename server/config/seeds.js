@@ -92,7 +92,7 @@ db.once('open', async () => {
             name: 'Mighty Mandrin',
             description: 'It smells sweet and fruity with a resounding zest.',
             image: '',
-            category: categories[0]._id,
+            category: categories[3]._id,
             price: 16.99,
             quantity: 50
         },
@@ -100,7 +100,7 @@ db.once('open', async () => {
             name: 'Great Red Grapefruit',
             description: 'A tart and citrus aroma.',
             image: '',
-            category: categories[0]._id,
+            category: categories[3]._id,
             price: 7.99,
             quantity: 50
         },
@@ -108,10 +108,35 @@ db.once('open', async () => {
             name: 'The Florida Keys Lime Pie',
             description: 'Smells like retirement.',
             image: '',
-            category: categories[0]._id,
+            category: categories[3]._id,
             price: 18.99,
             quantity: 50
         },
-    ])
+    ]);
+    
+    console.log('products seeded');
 
+    await User.deleteMany();
+
+    await User.create({
+        firstName: 'John',
+        lastName: 'Williamson',
+        email: 'jwill@testmail.com',
+        password: 'password12345',
+        orders: [
+            {
+              products: [products[0]._id, products[0]._id, products[1]._id]
+            }
+          ]
+    });
+    await User.create({
+        firstName: 'Bethany',
+        lastName: 'Hoyt',
+        email: 'bhoyt@testmail.com',
+        password: 'password12345'
+      });
+    
+      console.log('users seeded');
+    
+      process.exit();
 });
