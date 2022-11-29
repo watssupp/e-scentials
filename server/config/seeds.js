@@ -116,7 +116,6 @@ db.once('open', async () => {
     
     console.log('products seeded');
 
-<<<<<<< HEAD
     await User.deleteMany();
 
     await User.create({
