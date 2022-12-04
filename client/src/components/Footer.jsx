@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Pinterest, Twitter } from "@material-ui/icons"
+import { AlternateEmail, Facebook, Instagram, PhoneAndroid, Pinterest, Room, Twitter } from "@material-ui/icons"
 import styled from "styled-components"
 
 
@@ -41,15 +41,21 @@ const Center=styled.div`
 `
 
 const Title=styled.h3`
-    
+    margin-bottom: 30px;
 `
 
 const List=styled.ul`
-    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 `
 
 const ListItem=styled.li`
-
+    width: 50%;
+    margin-bottom: 10px;
+    cursor: pointer;
 `
 
 const Right=styled.div`
@@ -57,6 +63,16 @@ const Right=styled.div`
     padding: 20px;
 `
 
+const ContactItem=styled.div`
+    margin-bottom: 20px;
+    display: flex;
+    
+   
+`
+const Payment=styled.img`
+    width: 50%;
+    
+`
 export const Footer = () => {
   return (
     <Container>
@@ -93,13 +109,31 @@ export const Footer = () => {
                 <ListItem>Bestsellers</ListItem>
                 <ListItem>Account Settings</ListItem>
                 <ListItem>Orders</ListItem>
+                <ListItem>Return</ListItem>
                 <ListItem>Wishlist</ListItem>
-                <ListItem></ListItem>
-                <ListItem></ListItem>
-                <ListItem></ListItem>
+                <ListItem>Gift Card Balance</ListItem>
+                <ListItem>FAQ</ListItem>
             </List>
         </Center>
-        <Right></Right>
+
+        <Right>
+            <Title>
+                CONTACT
+            </Title>
+            <ContactItem> 
+                <Room/>
+                12345 Escentials Circle, Tabunga, DU 21837
+            </ContactItem>
+            <ContactItem>
+                <PhoneAndroid/>
+                +1 234 567 8910
+            </ContactItem>
+            <ContactItem>
+                <AlternateEmail/>
+                support@escentials.dev
+            </ContactItem>
+            <Payment src="/images/payment-option.png"/>
+        </Right>
     </Container>    
   )
 }
