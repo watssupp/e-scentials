@@ -1,3 +1,4 @@
+import React from 'react'
 import { FavoriteBorderOutlined, LocalMallOutlined, SearchOutlined } from "@material-ui/icons"
 import styled from "styled-components"
 
