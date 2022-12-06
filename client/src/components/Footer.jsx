@@ -1,10 +1,14 @@
-import { AlternateEmail, Facebook, Instagram, PhoneAndroid, Pinterest, Room, Twitter } from "@material-ui/icons"
-import styled from "styled-components"
+import {
+  AlternateEmail, Facebook, Instagram, PhoneAndroid, Pinterest, Room, Twitter 
+} from "@material-ui/icons";
+import styled from "styled-components";
+import { mobile } from "../responsive";
 
+const Container = styled.div`
+  display: flex;
+  ${mobile({ flexDirection: "column" })}
+`;
 
-const Container=styled.div`
-    display: flex;
-`
 
 const Left=styled.div`
     flex: 1;
@@ -137,3 +141,6 @@ export const Footer = () => {
     </Container>    
   )
 }
+
+
+export default Footer;
