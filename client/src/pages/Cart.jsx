@@ -93,7 +93,7 @@ const ProductColor = styled.div`
   background-color: ${(props) => props.color};
 `;
 
-const ProductSize = styled.span``;
+
 
 const PriceDetail = styled.div`
   flex: 1;
@@ -204,18 +204,15 @@ const Cart = () => {
             {cart.products.map((product) => (
               <Product>
                 <ProductDetail>
-                  <Image src={product.img} />
+                  <Image src="/images/product1.png" />
                   <Details>
                     <ProductName>
-                      <b>Product:</b> {product.title}
+                      <b>Product:</b> Mighty Matcha Candle
                     </ProductName>
                     <ProductId>
-                      <b>ID:</b> {product._id}
+                      <b>ID:</b> 1243124
                     </ProductId>
                     <ProductColor color={product.color} />
-                    <ProductSize>
-                      <b>Size:</b> {product.size}
-                    </ProductSize>
                   </Details>
                 </ProductDetail>
                 <PriceDetail>
@@ -225,7 +222,7 @@ const Cart = () => {
                     <Remove />
                   </ProductAmountContainer>
                   <ProductPrice>
-                    $ {product.price * product.quantity}
+                    $ 15
                   </ProductPrice>
                 </PriceDetail>
               </Product>
@@ -236,7 +233,7 @@ const Cart = () => {
             <SummaryTitle>ORDER SUMMARY</SummaryTitle>
             <SummaryItem>
               <SummaryItemText>Subtotal</SummaryItemText>
-              <SummaryItemPrice>$ {cart.total}</SummaryItemPrice>
+              <SummaryItemPrice>$ 30</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem>
               <SummaryItemText>Estimated Shipping</SummaryItemText>
@@ -248,11 +245,11 @@ const Cart = () => {
             </SummaryItem>
             <SummaryItem type="total">
               <SummaryItemText>Total</SummaryItemText>
-              <SummaryItemPrice>$ {cart.total}</SummaryItemPrice>
+              <SummaryItemPrice>$ 30d</SummaryItemPrice>
             </SummaryItem>
             <StripeCheckout
               name="hackerbby"
-              image="/images/product-wp3.png"
+              image="/images/pfp.jpg"
               billingAddress
               shippingAddress
               description={`Your total is $${cart.total}`}
