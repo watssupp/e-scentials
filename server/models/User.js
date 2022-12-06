@@ -16,7 +16,7 @@ const userSchema = new Schema({
         trim: true
     },
     email: {
-        trpe: String,
+        type: String,
         require:true,
         unique: true
     },
@@ -43,6 +43,6 @@ userSchema.pre('save', async function(next) {
     return await bcrypt.compare(password, this.password);
   };
   
-  const User = mongoose.model('User', userSchema);
+  const User = mongoose.model('user', userSchema);
   
   module.exports = User;

@@ -1,3 +1,4 @@
+import React from 'react'
 import { AlternateEmail, Facebook, Instagram, PhoneAndroid, Pinterest, Room, Twitter } from "@material-ui/icons"
 import styled from "styled-components"
 
