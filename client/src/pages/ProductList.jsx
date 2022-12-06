@@ -51,7 +51,7 @@ const ProductList = () => {
                 <FilterText>Filter Products:</FilterText>
                 <Select>
                     <Option>Select Option:</Option>
-                    <Option value="Candle">Candle</Option>
+                    <Option value="Candles">Candle</Option>
                     <Option value="Lotion">Lotion</Option>
                     <Option value="Bath">Bath</Option>
                     <Option value="Skincare">Skincare</Option>

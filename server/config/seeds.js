@@ -5,10 +5,10 @@ db.once('open', async () => {
     await Category.deleteMany();
   
     const categories = await Category.insertMany([
-      { name: 'floral' },
-      { name: 'woods' },
-      { name: 'aromatic' },
-      { name: 'citrus'}
+      { name: 'Candles' },
+      { name: 'Lotion' },
+      { name: 'Bath' },
+      { name: 'Skincare'}
     ]);
 
     console.log('categories seeded');
@@ -17,19 +17,19 @@ db.once('open', async () => {
 
     const products = await Product.insertMany([
         {
-            name: 'Hibiscus High',
-            description: 'A smell that invokes a floral boutique with a slight hint of Ivy.',
+            name: 'Spiritual Awakening',
+            description: 'Made from natural ingredients and transported by the soothing steam of a warm cup of matcha tea, the fresh scent of bergamot and green tea envelop you in a calming sense of serenity. The aromatic floral perfumes awaken the senses and a cool base of white chocolate, moss, and cedarwood brings the focus back to the present.',
             image: '',
-            category: categories[0]._id,
-            price: 19.99,
+            category: categories[2]._id,
+            price: 15.00,
             quantity: 50
         },
         {
-            name: 'Lavender Low',
+            name: 'Lilac & Lavender',
             description: 'A charismatic and intense yet botonical smell,  with an underlying floral sweetness.',
             image: '',
-            category: categories[0]._id,
-            price: 14.99,
+            category: categories[2]._id,
+            price: 11.00,
             quantity: 50
         },
         {
