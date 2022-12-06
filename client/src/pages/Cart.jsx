@@ -155,7 +155,7 @@ const Cart = () => {
                         <ProductDetail>
                             <Image src='/images/product5.png'/>
                             <Details>
-                                <ProductName><ProductP>Product:</ProductP>Sea Breeze Bath Set</ProductName>
+                                <ProductName><ProductP>Product:</ProductP>Spiritual Awakening Bath Set</ProductName>
                                 <ProductId><ProductP>ID:</ProductP>0398457</ProductId>
                                 <ProductDescription>Made from natural ingredients and transported by the soothing steam of a warm cup of matcha tea, the fresh scent of bergamot and green tea envelop you in a calming sense of serenity. The aromatic floral perfumes awaken the senses and a cool base of white chocolate, moss, and cedarwood brings the focus back to the present.</ProductDescription>
                             </Details>
@@ -176,7 +176,7 @@ const Cart = () => {
                             <Details>
                                 <ProductName><ProductP>Product:</ProductP>Lilac & Lavender Body Lotion</ProductName>
                                 <ProductId><ProductP>ID:</ProductP>024265437</ProductId>
-                                <ProductDescription>Made from natural ingredients and transported by the soothing steam of a warm cup of matcha tea, the fresh scent of bergamot and green tea envelop you in a calming sense of serenity. The aromatic floral perfumes awaken the senses and a cool base of white chocolate, moss, and cedarwood brings the focus back to the present.</ProductDescription>
+                                <ProductDescription>A charismatic and intense yet botonical smell,  with an underlying floral sweetness.</ProductDescription>
                             </Details>
                         </ProductDetail>
                         <PriceDetail>
