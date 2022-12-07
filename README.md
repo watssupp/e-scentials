@@ -1,5 +1,7 @@
 # E-Sentials
 https://github.com/watssupp/e-scentials
+# Deployment link
+https://escentials.herokuapp.com/
   # Description
 welcome to our online shop and be amazed by our wonderous selection of scented candles built to encapsulate your home or office with wonderful fragrence
   # Table of contents
