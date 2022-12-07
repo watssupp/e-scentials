@@ -1,3 +1,4 @@
+import React from "react"
 import styled from "styled-components";
 import { categories } from "../data";
 import { mobile } from "../responsive";
