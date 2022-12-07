@@ -16,7 +16,7 @@ const userSchema = new Schema({
         trim: true
     },
     email: {
-        trpe: String,
+        type: String,
         require: true,
         unique: true
     },
